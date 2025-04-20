@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Pregnancy Tracker",
+    "slug": "pregnancy-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF3F3"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pregnancytracker.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
+        "NSUserNotificationUsageDescription": "We need to send you notifications about your appointments and reminders.",
+        "NSLocationWhenInUseUsageDescription": "We need your location to show nearby hospitals and clinics.",
+        "NSCameraUsageDescription": "We need access to your camera to let you take photos of your shopping items.",
+        "NSPhotoLibraryUsageDescription": "We need access to your photos to let you add images to your shopping items."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAF3F3"
+      },
+      "package": "com.pregnancytracker.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#F8B3D1",
+          "sounds": ["./assets/notification-sound.wav"]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
+  }
+} 
